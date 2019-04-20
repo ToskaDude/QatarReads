@@ -1,0 +1,18 @@
+.home-page {
+	.slick-next {
+		right: 0;
+	}
+
+	.slick-prev {
+		left: 0;
+	}
+
+	.home-slider {
+		.slide {
+			height: 100vh;
+			min-height: 400px;
+			background-size: cover !important;
+			background-position: center !important;
+		}
+	}
+}

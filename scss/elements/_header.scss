@@ -1,0 +1,39 @@
+     .navbar {
+        min-height: 75px;                
+    }
+    .navbar-collapse{
+        overflow-x: hidden;
+    }
+    .navbar-default {
+        background-color: white;
+    }
+    .copyright-section {
+        display: table;
+        width: 100%;
+    }
+    .violet-red-section{
+        background-color: #EE317F; 
+        height: 10px;   
+        display: table-row;
+        line-height: 10px;            
+    } 
+    .azure-section{
+        background-color: #3765B0;
+        height: 100px;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        color: white;
+        font-size: 22px;
+    }           
+    @media (min-width: 768px){
+        .navbar-nav>li>a {
+            padding-top: 27px;
+            padding-bottom: 27px;
+        }                
+    }        
+    @media (max-width: 768px){
+        .navbar-nav {
+            margin: 10.5px -15px;
+        }   
+    } 
