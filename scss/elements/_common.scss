@@ -1,0 +1,21 @@
+@font-face {
+  font-family: din-light;
+  src: url("../assets/fonts/DINLight.ttf");
+}
+@font-face {
+  font-family: din-regular;
+  src: url("../assets/fonts/DINRegular.ttf");
+}
+@font-face {
+  font-family: din-medium;
+  src: url("../assets/fonts/DINMedium.ttf");
+}
+
+.blue-btn {
+	background: #24B9D1;
+	color: white;
+	padding: 10px 40px;
+    border-radius: 29px;
+    display: inline-block;
+    text-transform: uppercase;
+}

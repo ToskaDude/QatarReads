@@ -1,4 +1,13 @@
 .home-page {
+	p {
+		color: #A7A7A7;
+		font-size: 24px;
+	}
+
+	.flex-row {
+		display: flex;
+	}
+
 	.slick-next {
 		right: 0;
 	}
@@ -7,12 +16,140 @@
 		left: 0;
 	}
 
+	.slick-dotted.slick-slider {
+		margin-bottom: 0;
+	}
+
 	.home-slider {
 		.slide {
 			height: 100vh;
 			min-height: 400px;
 			background-size: cover !important;
 			background-position: center !important;
+			position: relative;
+			
+			.content {
+				position: absolute;
+			    bottom: 41px;
+			    left: 50px;
+
+				h1 {
+					color: white;
+					text-transform: uppercase;
+					font-family: din-regular;
+					font-size: 35px;
+					line-height: 40px;
+				}
+
+				.blue-btn {
+					margin-top: 15px;
+				}
+			}
+		}
+		.slick-dots {
+			bottom: 20px;
+		}
+	}
+
+	.about-us-section {
+		padding: 35px 3% 80px 3%;
+
+		.flex-row {
+			justify-content: space-between;
+			margin-top: 60px;
+		}
+		.left-sect {
+			width: 48%;
+			img {
+				width: 100%;
+			}
+		}
+		.right-sect {
+			width: 48%;
+			p {
+				font-family: din-regular;
+				line-height: 29px;
+			}
+			a {
+				margin-top: 20px;
+			}
+		}
+
+	}
+
+	.section-heading {
+		color: #76777B;
+		text-transform: uppercase;
+		text-align: center;
+		position: relative;
+		padding-bottom: 10px;
+		margin-bottom: 20px;
+		font-family: din-medium;
+		font-size: 32px;
+		&:after {
+			content: "";
+			display: inline-block;
+			width: 60px;
+			height: 3px;
+			background: #24B9D1;
+		    bottom: 0;
+		    position: absolute;
+		    left: 50%;
+		    transform: translateX(-50%);
+
+		}
+	}
+
+	.cards-section {
+		background: #F3F3F3;
+
+		.flex-row {
+			justify-content: center;
+		}
+		.cards {
+			width: 40%;
+			max-width: 600px;
+			margin: 3%;
+			background: white;
+			border-radius: 42px;
+			position: relative;
+			padding-bottom: 80px;
+
+			img {
+				max-width: 100%;
+			}
+			p {
+				font-size: 18px;
+			}
+
+			.card-title {
+				color: #76777B;
+    			font-size: 30px;
+    			margin-bottom: 14px;
+			}
+			.card-content {
+				padding: 0 20px;
+			}
+
+			.blue-btn {
+				position: absolute;
+				bottom: 20px;
+				left: 20px;
+			}
+		}
+	}
+
+	.partners-section {
+		padding: 35px 3% 80px 3%;
+
+		.subtitle {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		
+		.home-partners-carousel {
+			max-width: 70%;
+    		margin: 0 auto;
 		}
 	}
 }
