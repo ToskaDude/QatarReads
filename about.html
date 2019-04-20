@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Home</title>
+        <title>About</title>
         <meta name="description" content="">
         <meta name="author" content="">
         <!-- Latest compiled and minified CSS -->
@@ -13,7 +13,40 @@
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-        <style>                
+        <style>   
+            /* Common CSS */       
+
+            @font-face {
+                font-family: 'DINLight';
+                /*src: url('webfont.eot'); /* IE9 Compat Modes */
+                /*src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                     /*url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+                     /*url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+                     /*url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+                     /*url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+                 src: url('./Assets/Fonts/DINLight.ttf') format('truetype');
+            }
+
+            @font-face {
+                font-family: 'DINRegular';
+                src: url('./Assets/Fonts/DINRegular.ttf') format('truetype');
+            }
+
+            @font-face {
+                font-family: 'DINMedium';
+                src: url('./Assets/Fonts/DINMedium.ttf') format('truetype');
+            }
+
+            @font-face {
+                font-family: 'fontawesome';
+                src: url('./Assets/Fonts/fa-regular-400.eot'); /* IE9 Compat Modes */
+                src: url('./Assets/Fonts/fa-regular-400.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+                     url('./Assets/Fonts/fa-regular-400.woff2') format('woff2'), /* Super Modern Browsers */
+                     url('./Assets/Fonts/fa-regular-400.woff') format('woff'), /* Pretty Modern Browsers */
+                     url('./Assets/Fonts/fa-regular-400.ttf')  format('truetype'), /* Safari, Android, iOS */
+                     url('./Assets/Fonts/fa-regular-400.svg#svgFontName') format('svg'); /* Legacy iOS */
+            }   
+
             .navbar {
                 min-height: 75px;                
             }
@@ -23,6 +56,11 @@
             .navbar-default {
                 background-color: white;
             }
+
+            body {
+                font-family: DINRegular;
+            }
+
             .copyright-section {
                 display: table;
                 width: 100%;
@@ -52,7 +90,11 @@
                 .navbar-nav {
                     margin: 10.5px -15px;
                 }   
-            }     
+            }
+            /* End of Common CSS */
+
+            /* Page Specific CSS */
+            /* End of Page Specific CSS */     
         </style>
     </head>
     <body>
@@ -127,12 +169,13 @@
                 </div>
                 <!-- /.container-fluid -->
             </nav>
-            <div class="content">                
-                <!--temp -->
-                <img src="./Assets/Images/child-reading.png" style="width:100%;">
-                <!-- /.temp -->
+            <div class="content">
+                <img src="./Assets/Images/aboutus-hero.png" style="width:100%;">
             </div>
-            <div class="footer">                
+            <div class="footer"> 
+                <div class="quick-links-section">
+                    <div class=""></div>                    
+                </div>               
                 <div class="copyright-section">
                     <div class="violet-red-section">&nbsp;</div>
                     <div class="azure-section">Copyright @ Qatar Reads 2019</div>                    
