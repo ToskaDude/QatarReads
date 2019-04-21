@@ -1,0 +1,172 @@
+@import "../elements/header";
+@import "../generics/variables";
+@import "../elements/paginate";
+
+.story-page {
+    .stories-content {
+        .breadcrumb {
+            background-color: $color-breadcrumb;
+            height: 70px;
+            line-height: 20px;
+            padding: 25px;
+            border-radius: 0px;
+            margin-bottom: 0px;
+            p {
+                font-family: din-regular;
+                font-size: 16px;
+                color: #FFF;
+                text-align: right;
+            }
+        }
+        .description {
+            font-family: din-regular;
+            font-size: 24px;
+            line-height: 40px;
+            padding: 60px 0px;
+            color: $color-a7;
+            text-align: center;
+        }
+        .stories-list {
+            background-color: #F3F3F3;
+            padding: 0px;
+            .stories-left {
+                background-color: #3765B0;
+                padding: 40px 0;
+                .title {
+                    color: #FFF;
+                    border-bottom: 1px solid #FFF;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    font-family: din-regular;
+                    font-size: 30px;
+                    line-height: 60px;
+                }
+                li {
+                    text-align: center;
+                    color: #427FE3;
+                    font-family: din-regular;
+                    font-size: 30px;
+                    line-height: 60px;
+                    &.active {
+                        color: #FFF;
+                    }
+                }
+                @media(max-width: 991px) {
+                    background-color: #F3F3F3;
+                    .title {
+                        color: #76777B;
+                        background: transparent;
+                    }
+                    ul {
+                        background-color: #3765B0;
+                        width: 80%;
+                        line-height: 45px;
+                        border-radius: 30px;
+                        margin: auto;
+                        position: relative;
+                        height: 45px;
+                        overflow: scroll;
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            right: 0px;
+                            top: 0px;
+                            height: 45px;
+                            width: 45px;
+                            background: url('../Assets/Images/icons/down-arrow.png') no-repeat center;
+                        }
+                        li {
+                            display: none;
+                            line-height: 45px;
+                            cursor: pointer;
+                            &.active {
+                                display: block;
+                            }
+                        }
+                        &.open-list {
+                            padding: 10px 0;
+                            height: 200px;
+                            overflow: scroll;
+                            li {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+            .stories {
+                background-color: #F3F3F3;
+                padding: 40px 0px;
+                .book {
+                    min-width: 200px;
+                    margin-bottom: 50px;
+                    cursor: pointer;
+                    .cover {
+                        background-color: #FFF;
+                        max-height: 200px;
+                        width: 100%;
+                        border-radius: 10px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    p {
+                        font-family: din-regular;
+                        font-size: 28px;
+                        line-height: 34px;
+                        color: #75767A;
+                        text-align: center;
+                        padding-top: 10px;
+                    }
+                    &:hover {
+                        .cover{
+                            position: relative;
+                            &::after {
+                                content: '';
+                                background-color: #F15832;
+                                background-image: url('../Assets/Images/icons/download-icon.png');
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                }
+                @media(max-width: 991px) {
+                    .book {
+                        .cover {
+                            max-height: none;
+                        }   
+                    }
+                }
+            }
+        }
+    }
+    .subscribe-section {
+        background-color: $color-theme-blue;
+        padding: 90px 0;
+        p {
+            text-align: center;
+            font-family: din-regular;
+            font-size: 24px;
+            color: #FFF;
+            &.title {
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .paginate {
+        width: 150px;
+        margin: auto;
+        float: none;
+        @media(min-width: 991px) {
+            display: none;
+        }
+    }
+}
