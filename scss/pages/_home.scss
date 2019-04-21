@@ -1,3 +1,177 @@
+@font-face {
+    font-family: 'DINLight';
+    src: url('../Assets/Fonts/DINLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DINRegular';
+    src: url('../Assets/Fonts/DINRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DINMedium';
+    src: url('../Assets/Fonts/DINMedium.ttf') format('truetype');
+}  
+.navbar {
+    min-height: 75px;                
+}
+.navbar-collapse{
+    overflow-x: hidden;
+}
+.navbar-default {
+    background-color: white;
+}
+
+body {
+    font-family: DINRegular;
+}
+.violet-red-section{
+    background-color: #EE317F; 
+    height: 10px;   
+    display: table-row;
+    line-height: 10px;            
+} 
+.azure-section{
+    background-color: #3765B0;
+    height: 100px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}   
+.navbar-nav>li>a {        
+	@media (min-width: 768px){    
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }                
+} 
+.navbar-nav {       
+	@media (max-width: 768px){    
+        margin: 10.5px -15px;
+    }   
+}
+.subscribe-section {
+    background-color: #24B9D1;
+    color: white;
+    text-align: center;
+    height: 290px;    
+    display: table;
+    width: 100%;
+
+    .subscribe-section-content-wrapper {
+        display: table-cell;
+        vertical-align: middle;
+
+        .section-heading{
+            font-family: DINMedium; 
+            font-size: 24px;
+            padding-bottom: 10px
+        }
+
+        p {
+            width: 44%; 
+            margin: 0 auto;
+        }
+
+        .subscribe-button {
+            border: 2px solid white;
+            width: 150px;
+            border-radius: 25px;
+            margin: 25px auto 0;;
+            font-family: DINMedium;
+            padding: 10px;
+        }
+
+        .subscribe-button {
+            border: 2px solid white;
+            width: 150px;
+            border-radius: 25px;
+            margin: 25px auto 0;;
+            font-family: DINMedium;
+            padding: 10px;
+        }
+    }
+}
+.quick-links-section {
+    text-align: center;
+    height: 250px;    
+    display: table;
+    width: 100%;
+
+    .quick-links-section-content-wrapper {
+        margin: 55px auto;
+        color: #76777B;
+
+        .left-section{
+            border-right: 1px solid #76777B;
+        }
+
+        .right-section{
+            text-align: left;
+
+            .col-md-12{
+                margin-top: 15px;
+            }   
+
+            .social-icons-wrapper{
+                margin-top: 15px;
+
+                .social-icon {
+
+                    img{
+                        margin: 5px;
+                        width: 60%;
+                    }
+                }
+            }         
+        }
+
+        .contact-details{
+            width: 200px;
+            text-align: left;
+            font-family: Arial;
+            margin: 15px auto 0;
+            white-space: nowrap;
+        }
+
+        .rectangle-box{
+            height: 11px;
+            width: 7px;
+            border: 1px solid #76777B;
+            display: inline-block;  
+            margin-right: 3px;             
+        }
+
+        .opacity0{
+            opacity: 0;
+        }
+
+        .link-heading {
+            font-family: DINMedium;
+            color: #24B9D1;
+            font-size: 20px;                
+        }
+
+        .links{
+            margin-top: 3px;
+
+            a{
+                font-family: DINRegular;
+                color: #76777B;              
+            }
+
+            .pipe {
+                display: inline-block;
+                padding: 0px 10px;
+            }
+        }
+    }
+}
+.copyright-section {
+    display: table;
+    width: 100%;
+} 
 .home-page {
 	p {
 		color: #A7A7A7;
