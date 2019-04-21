@@ -6,26 +6,10 @@
     .stories-content {
         padding: 0px;
         .breadcrumb {
-            background-color: $color-breadcrumb;
-            height: 70px;
-            line-height: 20px;
-            padding: 25px;
-            border-radius: 0px;
-            margin-bottom: 0px;
-            p {
-                font-family: din-regular;
-                font-size: 16px;
-                color: #FFF;
-                text-align: right;
-            }
+            @include breadcrumb;
         }
         .description {
-            font-family: din-regular;
-            font-size: 24px;
-            line-height: 40px;
-            padding: 60px 0px;
-            color: $color-a7;
-            text-align: center;
+            @include page-description;
         }
         .stories-list {
             background-color: #F3F3F3;
