@@ -11,6 +11,26 @@ $color-theme-blue: #24B9D1;
 $color-blue-disabled: #69D9EB;
 $color-breadcrumb: #EE317F;
 
-@mixin banner-imge {
-    
+@mixin breadcrumb {
+    background-color: $color-breadcrumb;
+    height: 70px;
+    line-height: 20px;
+    padding: 25px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    p {
+        font-family: din-regular;
+        font-size: 16px;
+        color: #FFF;
+        text-align: right;
+    }
+}
+
+@mixin page-description {
+    font-family: din-regular;
+    font-size: 24px;
+    line-height: 40px;
+    padding: 60px 0px;
+    color: $color-a7;
+    text-align: center;
 }

@@ -1,0 +1,58 @@
+@import "../elements/header";
+@import "../generics/variables";
+@import "../elements/paginate";
+
+.volunteer-page {
+    .volunteer-content {
+        padding: 0px;
+        .breadcrumb {
+            @include breadcrumb;
+        }
+        .description {
+            @include page-description;
+        }
+        .mid-section {
+            padding: 60px 0px;
+            background-color: #F3F3F3;
+            p {
+                font-family: din-regular;
+                font-size: 38px;
+                line-height: 40px;
+                padding-bottom: 60px;
+                text-align: center
+            }
+            img {
+                width: 70%;
+                margin: 0px 15%;
+                border-radius: 10px;
+            }
+        }
+        .volunteer-type-section {
+            .volunteer {
+                .volunteer-img {
+                    width: 200px;
+                    max-height: 200px;
+                    border-radius: 50%;
+                    max-width: 100%;
+                    min-height: 100px;
+                    background-position: center !important;
+                    background-size: contain !important;
+                    background-repeat: no-repeat !important;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-family: din-regular;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: $color-a7;
+                    text-align: center;
+                    &.volunteer-name {
+                        font-size: 26px;
+                        line-height: 32px;
+                        color: #76777B;
+                    }
+                }
+            }
+        }
+    }
+}
