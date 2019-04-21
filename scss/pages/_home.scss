@@ -2,6 +2,10 @@
 	p {
 		color: #A7A7A7;
 		font-size: 24px;
+
+		@media(max-width: 1366px) {
+			font-size: 22px;
+		}
 	}
 
 	.flex-row {
@@ -30,8 +34,14 @@
 			
 			.content {
 				position: absolute;
-			    bottom: 41px;
+			    bottom: 90px;
 			    left: 50px;
+			    @media(max-width: 900px) {
+			    	left: 0;
+				    width: 100%;
+				    text-align: center;
+				    padding: 0 20px;
+			    }
 
 				h1 {
 					color: white;
@@ -47,7 +57,10 @@
 			}
 		}
 		.slick-dots {
-			bottom: 20px;
+			bottom: 45px;
+			@media(max-width: 900px) {
+				display: none !important;
+			}
 		}
 	}
 
@@ -57,15 +70,27 @@
 		.flex-row {
 			justify-content: space-between;
 			margin-top: 60px;
+			@media(max-width: 900px) {
+				display: block;
+				text-align: center;
+				margin-top: 30px;
+			}
 		}
 		.left-sect {
 			width: 48%;
+			@media(max-width: 900px) {
+				width: 100%;
+			}
 			img {
 				width: 100%;
 			}
 		}
 		.right-sect {
 			width: 48%;
+			@media(max-width: 900px) {
+				width: 100%;
+				margin-top: 20px;
+			}
 			p {
 				font-family: din-regular;
 				line-height: 29px;
@@ -98,6 +123,9 @@
 		    transform: translateX(-50%);
 
 		}
+		@media(max-width: 1366px) {
+			font-size: 28px;
+		}
 	}
 
 	.cards-section {
@@ -105,6 +133,11 @@
 
 		.flex-row {
 			justify-content: center;
+			@media(max-width: 900px) {
+				padding: 20px;
+				display: block;
+				text-align: center;
+			}
 		}
 		.cards {
 			width: 40%;
@@ -114,12 +147,19 @@
 			border-radius: 42px;
 			position: relative;
 			padding-bottom: 80px;
+			@media(max-width: 900px) {
+				width: 90%;
+				margin: 20px auto;
+				padding-bottom: 30px;
+			}
 
 			img {
 				max-width: 100%;
 			}
 			p {
 				font-size: 18px;
+				font-family: din-regular;
+    			line-height: 22px;
 			}
 
 			.card-title {
@@ -132,9 +172,14 @@
 			}
 
 			.blue-btn {
-				position: absolute;
-				bottom: 20px;
-				left: 20px;
+				@media(min-width: 901px) {
+					position: absolute;
+					bottom: 20px;
+					left: 20px;
+					margin-top: 0;
+				}
+				margin-top: 20px;
+				
 			}
 		}
 	}
@@ -142,6 +187,9 @@
 	.partners-section {
 		padding: 35px 3% 80px 3%;
 
+		@media(max-width: 900px) {
+			padding: 40px 30px;
+		}
 		.subtitle {
 			text-align: center;
 			margin-bottom: 20px;
@@ -157,6 +205,11 @@
     			align-items: center;
 			    justify-content: center;
 			    display: flex;
+
+			    img {
+			    	max-width: 86%;
+			    	margin: 0 auto;
+			    }
     		}
 		}
 	}
@@ -164,15 +217,20 @@
 	.links-section {
 		.flex-row {
 			display: flex;
+			@media(max-width: 900px) {
+				display: block;
+			}
 			.link-sect {
 				flex: 1;
 				display: flex;
 				justify-content: center;
 				align-items:center;
-				height: 200px;
+				height: 350px;
     			flex-wrap: wrap;
     			flex-direction: column;
-				
+				@media(max-width: 900px) {
+					width: 100%;
+				}	
 				&.purple {
 					background: #EE317F;
 					a {
@@ -197,7 +255,7 @@
 					text-align: center;
 					width: 100%;
 					font-size: 29px;
-    				margin-bottom: 10px;
+    				margin-bottom: 20px;
 				}
 			}
 		}
@@ -205,18 +263,122 @@
 
 	.social-media-section {
 		padding: 35px 3% 80px 3%;
-		
+		@media(max-width: 900px) {
+			padding: 40px 30px;
+		}
+
 		.sm-title {
 			color: #24B9D1;
 			font-size: 18px;
 			text-align: center;
 			margin-bottom: 10px;
+
+			.insta-icon {
+				margin-right: 5px;
+    			vertical-align: bottom;
+			}
 		}
 
 		.carousel-slide {
 			img {
 				max-width: 86%;
+				margin: 0 auto;
+			}
+		}
+
+		.home-share-carousel {
+			@media(max-width: 640px) {
+    			max-width: 100%;
+    			margin: 20px auto 0;
 			}
 		}
 	}
+
+	.slick-dots li {
+		button {
+			background: white;
+			padding: 0;
+			border-radius: 50%;
+			width: 15px;
+			height: 15px;
+			&:before {
+				display: none;
+			}
+		}
+
+		&.slick-active {
+			button {
+				background: #b8b8b8;
+			}
+		}
+	}
+
+	.slick-next {
+		background: url('../assets/Images/next-arrow.svg') no-repeat;
+		background-size: auto;
+    	height: 50px;
+    	width: 50px;
+        background-position: center;
+    	right: -40px; 
+    	&:before {
+    		display: none;
+    	}
+    	@media(max-width: 640px) {
+    		right: -35px;
+    		height: 30px;
+    		width: 30px;
+    		background-size: 52px;
+    	}
+	}
+	.slick-prev {
+		background: url('../assets/Images/prev-arrow.svg') no-repeat;
+		background-size: contain;
+		background-size: auto;
+    	height: 50px;
+    	width: 50px;
+        background-position: center;
+    	left: -40px; 
+    	&:before {
+    		display: none;
+    	}
+    	@media(max-width: 640px) {
+    		left: -35px;
+    		height: 30px;
+    		width: 30px;
+    		background-size: 52px;
+
+    	}
+	}
+}
+
+@media(max-width: 640px) {
+	.home-page .home-slider .slide .content h1{
+		font-size: 24px;
+    	line-height: 33px;
+	}
+
+	.home-page .about-us-section .right-sect p {
+		font-size: 18px;
+		line-height: 25px;
+	}
+
+	.home-page .cards-section .flex-row {
+		padding: 5px 0;
+	}
+	.home-page .cards-section .cards .card-title {
+		font-size: 21px;
+	}
+
+	.home-page p {
+		font-size: 18px;
+    	line-height: 24px;
+	}
+	.home-page .links-section .flex-row .link-sect {
+		height: 250px;
+	}
+	.home-page .section-heading {
+    	font-size: 18px;
+    	line-height: 24px;
+	}
+	    
 }

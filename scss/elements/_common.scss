@@ -10,7 +10,10 @@
   font-family: din-medium;
   src: url("../assets/fonts/DINMedium.ttf");
 }
-
+.main-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
 .blue-btn {
 	background: #24B9D1;
 	color: white;
@@ -18,4 +21,5 @@
     border-radius: 29px;
     display: inline-block;
     text-transform: uppercase;
+    cursor: pointer;
 }
