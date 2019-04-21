@@ -23,3 +23,10 @@
     text-transform: uppercase;
     cursor: pointer;
 }
+
+.body-wrapper {
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

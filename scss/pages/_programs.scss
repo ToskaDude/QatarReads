@@ -1,0 +1,12 @@
+.programs-page {
+	.card-section {
+		background: #f3f3f3;
+		padding: 70px 30px;
+		@media(min-width: 901px) {
+			display: flex;
+			justify-content: center;
+			padding: 70px 0;
+		}
+		
+	}
+}
