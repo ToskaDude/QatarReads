@@ -60,11 +60,6 @@
             body {
                 font-family: DINRegular;
             }
-
-            .copyright-section {
-                display: table;
-                width: 100%;
-            }
             .violet-red-section{
                 background-color: #EE317F; 
                 height: 10px;   
@@ -94,93 +89,439 @@
             /* End of Common CSS */
 
             /* Page Specific CSS */
-            /* End of Page Specific CSS */     
+
+
+            .about-page .container-fluid {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .about-page .row {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .about-page .main-wrapper{
+                margin-top: 75px;
+            }
+            .about-page .hero-image-section{
+                background-image: url('./Assets/Images/aboutus-hero.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                min-height: 314px;
+                display: table;
+                width: 100%;
+            }
+            .about-page .hero-image-section .after {
+                width: 100%;
+                height: 100%;
+                display: table-cell;
+                vertical-align: middle;
+                color: white;
+                background: rgba(0,0,0,.3); 
+                text-align: center;
+            }
+            .about-page p {
+                margin: 0;
+            }
+            .about-page .content {
+                font-size: 18px;
+                color: #A7A7A7;
+            }
+            .about-page .content .row {
+                margin: 45px auto;
+            }
+            .about-page .row .vital-reading{
+                background-image: url('./Assets/Images/vital-reading-points.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                min-height: 338px;
+                padding: 45px 30px;
+            }
+            .about-page .row .vital-reading-2{
+                background-image: url('./Assets/Images/vital-reading-points-2.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                min-height: 254px;
+                padding: 45px 30px;
+            }
+            .about-page .row .reading-point {
+                color: white;
+                font-family: DINMedium;
+                text-align: left;
+                margin: 21px 0 21px 20px;
+                font-size: 16px;
+                position: relative;
+                top: 5px; 
+            }
+            .about-page .row .vital-reading-2 .reading-point {                
+                margin: 15px 0 14px 21px;
+            }
+            /* End of Page Specific CSS */  
+
+
+            .subscribe-section {
+                background-color: #24B9D1;
+                color: white;
+                text-align: center;
+                height: 290px;    
+                display: table;
+                width: 100%;
+            }
+            .subscribe-section-content-wrapper {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            .subscribe-section-content-wrapper .section-heading{
+                font-family: DINMedium; 
+                font-size: 24px;
+                padding-bottom: 10px
+            }
+            .subscribe-section-content-wrapper p{
+                width: 44%; 
+                margin: 0 auto;
+            }
+            .subscribe-section-content-wrapper .subscribe-button {
+                border: 2px solid white;
+                width: 150px;
+                border-radius: 25px;
+                margin: 25px auto 0;;
+                font-family: DINMedium;
+                padding: 10px;
+            }
+            .quick-links-section {
+                text-align: center;
+                height: 250px;    
+                display: table;
+                width: 100%;
+            }
+            .quick-links-section-content-wrapper {
+                margin: 55px auto;
+                color: #76777B;
+            }
+            .quick-links-section-content-wrapper .left-section{
+                border-right: 1px solid #76777B;
+            }
+            .quick-links-section-content-wrapper .right-section{
+                text-align: left;
+            }
+            .quick-links-section-content-wrapper .right-section .col-md-12{
+                margin-top: 15px;
+            }            
+            .quick-links-section-content-wrapper .contact-details{
+                width: 200px;
+                text-align: left;
+                font-family: Arial;
+                margin: 15px auto 0;
+                white-space: nowrap;
+            }
+            .quick-links-section-content-wrapper .rectangle-box{
+                height: 11px;
+                width: 7px;
+                border: 1px solid #76777B;
+                display: inline-block;  
+                margin-right: 3px;             
+            }
+            .quick-links-section-content-wrapper .opacity0{
+                opacity: 0;
+            }
+            .quick-links-section-content-wrapper .link-heading {
+                font-family: DINMedium;
+                color: #24B9D1;
+                font-size: 20px;                
+            }
+            .quick-links-section-content-wrapper .links{
+                margin-top: 3px;
+            }
+            .quick-links-section-content-wrapper .links a{
+                font-family: DINRegular;
+                color: #76777B;              
+            }
+            .quick-links-section-content-wrapper .links .pipe {
+                display: inline-block;
+                padding: 0px 10px;
+            }
+            .quick-links-section-content-wrapper .right-section .social-icons-wrapper{
+                margin-top: 15px;
+            }
+            .quick-links-section-content-wrapper .right-section .social-icon img{
+                margin: 5px;
+                width: 60%;
+            }
+            .copyright-section {
+                display: table;
+                width: 100%;
+            }   
         </style>
     </head>
-    <body>
-        <div class="body-wrapper">
-            <nav class="navbar navbar-default navbar-fixed-top">
-                <div class="container-fluid">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">
-                            <img alt="Brand" src="./Assets/Images/logo_nrc@2x.png" style="width: 100px;">
-                        </a>
-                    </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        
-                        <!--
-                        <form class="navbar-form navbar-left">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search">
-                            </div>
-                            <button type="submit" class="btn btn-default">Submit</button>
-                        </form>
-                        -->
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <ul class="nav navbar-nav">
-                                    <li class="active"><a href="#">About</a></li>
-                                    <li><a href="#">Activity</a></li>
-                                    <li><a href="#">Junior</a></li>
-                                    <li><a href="#">Programs</a></li>
-                                    <li><a href="#">Partnership</a></li>
-                                    <li><a href="#">Community</a></li>
-                                    <li><a href="#">Gallery</a></li>
-                                    <!--
-                                    <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                            <li><a href="#">Something else here</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li><a href="#">Separated link</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li><a href="#">One more separated link</a></li>
-                                        </ul>
-                                    </li>
-                                    -->
-                                </ul>
-                            <li>
+    <body class="about-page">
+        <div class="body-wrapper container-fluid">
+            <header>
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">
+                                <img alt="Brand" src="./Assets/Images/logo_nrc@2x.png" style="width: 100px;">
+                            </a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            
                             <!--
-                            <li><a href="#">Link</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                <ul class="dropdown-menu">                                    
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                </ul>
-                            </li>
+                            <form class="navbar-form navbar-left">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </form>
                             -->
-                        </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <ul class="nav navbar-nav">
+                                        <li class="active"><a href="#">About</a></li>
+                                        <li><a href="#">Activity</a></li>
+                                        <li><a href="#">Junior</a></li>
+                                        <li><a href="#">Programs</a></li>
+                                        <li><a href="#">Partnership</a></li>
+                                        <li><a href="#">Community</a></li>
+                                        <li><a href="#">Gallery</a></li>
+                                        <!--
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">One more separated link</a></li>
+                                            </ul>
+                                        </li>
+                                        -->
+                                    </ul>
+                                <li>
+                                <!--
+                                <li><a href="#">Link</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">                                    
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </li>
+                                -->
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
                     </div>
-                    <!-- /.navbar-collapse -->
+                    <!-- /.container-fluid -->
+                </nav>
+            </header> 
+            <main class="main-wrapper">
+                <div >
+                    <div class="content">
+                        <div class="hero-image-section">
+                            <!-- <img src="./Assets/Images/aboutus-hero.png" style="width:100%;"> -->
+                            <div class="hero-image-section after">
+                                <h1>ABOUT US</h1>
+                            </div>
+                        </div>                        
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-8">                                    
+                                    <p>
+                                        The National Reading Campaign was launched in 2016 by Qatar Foundation for Education, Science and Community Development (QF) as a program that aims to create a national drive to communicate the importance of reading, and to create interest in reading amongst all residents. In 2019, the National Reading Campaign was revamped as Qatar Reads. As the NRC has evolved, so has QF’s vision of what it can be, who it must reach and how it can reach them, and what it can achieve in nurturing a culture of reading, and a nation of readers. The result is Qatar Reads – a natural but innovative next step in this movement, with a new name, new models of driving engagement, and a new audience scope, but the same overarching purpose. The renewed strategy aims to create a community of readers and knowledge-seekers across Qatar. Our aim is to promote accessibility, creativity and literacy. We target all age groups and all demographics residing in Qatar. We believe that reading leads to discovery, exchange, exploration and transformation. Reading is a springboard for change and growth. Equipping our society with the habit of reading creates a pool of knowledge, broad and open mindsets, positive values, and a desire to make learning a constant of daily life.
+                                    </p>                                    
+                                </div>
+                                <div class="col-md-2"></div>  
+                            </div>
+                            <div class="row">                            
+                                <div class="col-md-2"></div>
+                                <div class="col-md-8">                                    
+                                    <p>
+                                        Reading is vital in a human, societal, and national development context as it is:
+                                    </p>                                    
+                                </div>
+                                <div class="col-md-2"></div>  
+                            </div>
+                            <div class="row">                            
+                                <div class="col-md-2"></div>
+                                <div class="col-md-8 vital-reading">                                    
+                                    <div class="reading-point">
+                                        <img src="./Assets/Images/bullet-point.png" width="35px;">
+                                        A gateway to knowledge
+                                    </div>  
+                                    <div class="reading-point">
+                                        <img src="./Assets/Images/bullet-point.png" width="35px;">
+                                        A vehicle for social engagement.
+                                    </div>
+                                    <div class="reading-point">
+                                        <img src="./Assets/Images/bullet-point.png" width="35px;">
+                                        A catalyst for greater interest in science and research.
+                                    </div>
+                                    <div class="reading-point">
+                                        <img src="./Assets/Images/bullet-point.png" width="35px;">
+                                        A means of preserving and promoting Qatar’s cultural heritage and the Arabic language.
+                                    </div>                              
+                                </div>
+                                <div class="col-md-2"></div>  
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-8">                                    
+                                    <p>
+                                        Qatar Reads will place the power of stories and storytelling at the heart of our community, through interactive concepts specifically designed to align with the way people live their lives – immersing them in a culture of reading, and showing them just how easy it is to connect with it.
+                                    </p>
+                                    <br>
+                                    <p>
+                                        Through Qatar Reads, QF aims to develop and heighten a love of reading on a nationwide level, in a truly inclusive, engaging, and relevant way. Its goal is to make people throughout Qatar’s community, regardless of age, culture, and background, aware of just how important reading is tour lives and societies; the value and joy it can bring to them; and how it can take them on a journey of knowledge that leads to new interests, topics, ideas, and ways of seeing the world. And by fostering a community of readers, Qatar Reads will promote values, behaviors, and choices that support the sustainable development goals of Qatar. It will help to shape:Knowledgeable, well-rounded, insightful leaders.
+                                    </p>                                 
+                                </div>
+                                <div class="col-md-2"></div>  
+                            </div>
+                            <div class="row">                            
+                                <div class="col-md-2"></div>
+                                <div class="col-md-8 vital-reading-2">                                    
+                                    <div class="reading-point">
+                                        <img src="./Assets/Images/bullet-point.png" width="35px;">
+                                        Innovative, critical, independent thinkers.
+                                    </div>  
+                                    <div class="reading-point">
+                                        <img src="./Assets/Images/bullet-point.png" width="35px;">
+                                        Active, globally-aware citizens.
+                                    </div>
+                                    <div class="reading-point">
+                                        <img src="./Assets/Images/bullet-point.png" width="35px;">
+                                        A Self-reliant society that takes responsibility for discovery.
+                                    </div>                            
+                                </div>
+                                <div class="col-md-2"></div>  
+                            </div>
+                            <div class="row">                            
+                                <div class="col-md-2"></div>
+                                <div class="col-md-8">                                    
+                                    <p>
+                                        QF believes that reading is indivisible from knowledge, from education, from exploration, from creative thinking – and from the process of unlocking human potential. Through Qatar Reads, QF aims to ensure the eyes and minds of Qatar’s population are opened up to the possibilities that reading creates.
+                                    </p>                                    
+                                </div>
+                                <div class="col-md-2"></div>  
+                            </div>
+                        </div>                        
+                    </div>
                 </div>
-                <!-- /.container-fluid -->
-            </nav>
-            <div class="content">
-                <img src="./Assets/Images/aboutus-hero.png" style="width:100%;">
-            </div>
-            <div class="footer"> 
-                <div class="quick-links-section">
-                    <div class=""></div>                    
-                </div>               
-                <div class="copyright-section">
-                    <div class="violet-red-section">&nbsp;</div>
-                    <div class="azure-section">Copyright @ Qatar Reads 2019</div>                    
+            </main>           
+            <footer>
+                <div class="footer"> 
+                    <div class="subscribe-section">
+                        <div class="subscribe-section-content-wrapper">
+                            <div class="section-heading">
+                                Subscribe to Family Reading Program
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit is faucibus purus, ac posuere leo egestas id. Nullam molestie neque ab scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            </p>
+                            <div class="subscribe-button">
+                                SUBSCRIBE                            
+                            </div> 
+                        </div>       
+                    </div> 
+                    <div class="quick-links-section">
+                         <div class="quick-links-section-content-wrapper">
+                             <div class="container-fluid">
+                                 <div class="row">
+                                     <div class="col-md-4 left-section">
+                                         <img alt="Brand" src="./Assets/Images/logo2_nrc.png" style="width: 200px;">
+                                         <div class="contact-details">                                             
+                                             <div class="rectangle-box"></div>
+                                             Cecilia Chapman 711-2880
+                                             <br>
+                                             <div class="rectangle-box opacity0"></div>
+                                             Nulla St. Mankato Mississippi
+                                             <br>
+                                             <div class="rectangle-box"></div>
+                                             96522 (257) 563 
+                                             &nbsp;&nbsp;
+                                             <div class="rectangle-box"></div>
+                                             info@qatarreads.qa
+                                         </div>
+                                     </div>
+                                     <div class="col-md-8 right-section">
+                                         <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-11">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="link-heading">
+                                                                    QUIK LINKS
+                                                                </div>
+                                                                <div class="links">
+                                                                    <a href="#">HOME</a>   <div class="pipe">|</div>   
+                                                                    <a href="#">ABOUT</a>  <div class="pipe">|</div> 
+                                                                    <a href="#">JUNIOR</a> <div class="pipe">|</div> 
+                                                                    <a href="#">PROGRAMS</a> <div class="pipe">|</div> 
+                                                                    <a href="#">PARTNERSHIP</a>  <div class="pipe">|</div> 
+                                                                    <a href="#">COMMUNITY</a>   <div class="pipe">|</div>   
+                                                                    <a href="#">GALLERY</a>   <div class="pipe">|</div>   
+                                                                    <a href="#">SITEMAP</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="link-heading">
+                                                                    ACTIVITIES
+                                                                </div>
+                                                                <div class="links">
+                                                                    <a href="#">DIBF</a>   <div class="pipe">|</div>    
+                                                                    <a href="#">LIBRARY OF WONDERS</a>  <div class="pipe">|</div>    
+                                                                    <a href="#">DARB AL SAIE</a>   <div class="pipe">|</div>    
+                                                                    <a href="#">EMPOWER</a>   
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-1 social-icons-wrapper">
+                                                    <div class="social-icon">
+                                                        <a href="#">
+                                                            <img src="./Assets/Images/insta.png">
+                                                        </a>
+                                                    </div>
+                                                    <div class="social-icon">
+                                                        <a href="#">
+                                                            <img src="./Assets/Images/fb.png">
+                                                        </a>
+                                                    </div>
+                                                    <div class="social-icon">
+                                                        <a href="#">
+                                                            <img src="./Assets/Images/twitter.png">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>                  
+                    </div>               
+                    <div class="copyright-section">
+                        <div class="violet-red-section">&nbsp;</div>
+                        <div class="azure-section">Copyright @ Qatar Reads 2019</div>                    
+                    </div>
                 </div>
-            </div>
+            </footer>            
         </div>
     </body>
 </html>
