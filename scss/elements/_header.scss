@@ -44,6 +44,10 @@
             margin-right: 15px;
             margin-top: 8px;
             margin-bottom: 8px;
+            display:none;
+            @media screen and (max-width: 767px){  
+                display: block;
+            }
         }
         a.arabic-button.mobile-only {
             color: white;
