@@ -1,9 +1,10 @@
-.programs-page {
+.activities-page {
 	.card-section {
 		background: #f3f3f3;
 		padding: 70px 30px;
 		position: relative;
         overflow: hidden;
+        flex-wrap: wrap;
         @media(max-width: 640px) {
             padding: 70px 10px;
         }
