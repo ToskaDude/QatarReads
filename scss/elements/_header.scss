@@ -37,7 +37,20 @@
         } 
     }
     .navbar-header {
-
+        .mobile-only {
+            position: relative;
+            float: right;
+            padding: 9px 5px;
+            margin-right: 15px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        a.arabic-button.mobile-only {
+            color: white;
+            background: #24B9D1;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
         .navbar-brand {
 
             img {
@@ -55,6 +68,12 @@
     }
 
     .navbar-right{
+
+        .mobile-hide {
+             @media (max-width: 767px){  
+                display: none;
+            } 
+        }
         @media (max-width: 1068px){  
             margin-right: 0;
         } 
@@ -151,6 +170,10 @@ body {
         padding-right:10px;
         padding-left: 10px;
     } 
+    @media (max-width: 767px){  
+        padding: 2px;
+        text-align: right;
+    } 
 } 
 .navbar-nav {   
     
@@ -172,7 +195,7 @@ body {
         } 
     } 
     @media (max-width: 767px){    
-        margin: 10.5px -15px;
+        margin: 10.5px 15px;
     }   
 }
 .main-wrapper {
