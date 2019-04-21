@@ -58,6 +58,12 @@ $(document).ready(function(){
     	]
   	});
 
+  	$('.scroll-to-about-us').click(function(ev) {
+  		ev.preventDefault();
+  		$('html, body').animate({
+        scrollTop: $('.about-us-section').offset().top
+      }, 800);
+  	})
   	
   	
 });
