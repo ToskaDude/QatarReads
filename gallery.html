@@ -16,9 +16,19 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!-- Masonry grid app -->
+        <script src="js/lib/masonry.pkgd.min.js"></script>
         <script src="js/lib/slick.min.js"></script>
         <script type="text/javascript" src="js/home.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.grid').masonry({
+                    columnWidth: 200,
+                    itemSelector: '.grid-item'
+                });
+            });
+        </script>
     </head>
     <body class="gallery-page">
         <div class="body-wrapper">
@@ -56,9 +66,9 @@
                 </div>
                 <!-- /.container-fluid -->
             </nav>
-            <main class="main-wrapper mt-50">
+            <main class="main-wrapper mt-70">
                 <div>
-                    <section class="inner-page-header" style="background:url('assets/Images/programs/programs-bg.png')">
+                    <section class="inner-page-header" style="background:url('Assets/Images/gallery/banner.png')">
                         <div class="overlay"></div>
                         <h1>Gallery</h1>
                     </section>
@@ -72,10 +82,51 @@
                                 <li> Videos </li>
                             </ul>
                         </div>
+                        <div class="gallery-grid col-md-8 col-md-offset-2 mt-70">
+                            <div class="grid">
+                                <img src="Assets/Images/gallery/5cb571d753a04.png" class="grid-item grid-item--height2" />
+                                <img src="Assets/Images/gallery/5cb57302247d0.png" class="grid-item" />
+                                <img src="Assets/Images/gallery/5cb573497a419.png" class="grid-item" />
+                                <img src="Assets/Images/gallery/5cb573ad0d591.png" class="grid-item" />
+                                <div class="grid-item grid-video-item">
+                                    <img src="Assets/Images/gallery/5cb5a22686f47.png" class="" />
+                                    <div class="label">
+                                        <span class="title">
+                                            Lorem ipsum dolor sit amet, Consectetur
+                                        </span>
+                                        <p>
+                                            Qatar Reads aims to knit together all the different parts of Qatar’s reading community
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src="Assets/Images/gallery/video.png" class="grid-item" />
+                            </div>
+                            <div class="paginate">
+                                <div class="prev"></div>
+                                <div class="next"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="subscribe-section">
+                        <div class="col-md-8 col-md-offset-2">
+                            <p class="title">
+                                Subscribe to Family Reading Program
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit is faucibus purus, ac posuere leo egestas id. Nullam molestie neque ab scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            </p>
+                        </div>
                     </section>
                 </div>
             </main>
-            <footer></footer>
+            <footer>
+                <div class="footer">                
+                    <div class="copyright-section">
+                        <div class="violet-red-section">&nbsp;</div>
+                        <div class="azure-section">Copyright @ Qatar Reads 2019</div>                    
+                    </div>
+                </div>
+            </footer>
         </div>
     </body>
 </html>

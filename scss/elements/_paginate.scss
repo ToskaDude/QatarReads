@@ -1,0 +1,19 @@
+@import "../generics/variables";
+
+.paginate {
+    float: right;
+    div {
+        height: 60px;
+        width: 60px;
+        border: 1px solid $color-70;
+        float: left;
+        border-radius: 50%;
+        &.prev {
+            margin-right: 10px; 
+            background: url('../Assets/Images/icons/left-arrow.svg') no-repeat center;
+        }
+        &.next {
+            background: url('../Assets/Images/icons/right-arrow.svg') no-repeat center;
+        }
+    }
+}
