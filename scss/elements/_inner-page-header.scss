@@ -1,0 +1,32 @@
+.inner-page-header {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	background-size: cover !important;
+    background-position: center center !important;
+    min-height: 314px;
+    @media(max-width: 640px) {
+    	min-height: 250px;
+    }
+	.overlay {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		top: 0;
+		background: rgba(0,0,0,.3); 
+		height: 100%;
+	}
+
+	h1 {
+		color: white;
+		text-transform: uppercase;
+		z-index: 1;
+		position: relative;
+		font-size: 44px;
+		font-family: 'din-medium';
+		@media(max-width: 900px) {
+			font-size: 35px;
+		}
+	}
+}
