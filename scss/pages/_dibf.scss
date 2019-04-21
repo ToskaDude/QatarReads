@@ -1,12 +1,9 @@
 .dibf-page{
-	body {
-		font-family: din-regular;
-		color: #A7A7A7;
-
-		img {
-			width: 100%;
-		}
-	}
+	
+	font-family: din-regular;
+	color: #A7A7A7;
+	overflow-x: hidden;
+		
 	.mobile-hide {
 		@media (max-width: 767px){ 
             display: none;
@@ -39,6 +36,30 @@
 		img {
 			width: 100%;
 		}
+
+		.image1 {
+		    position: absolute;
+		    width: 48%;
+		    left: -29%;
+		    transform: rotate(-47deg);
+		    z-index: -1;
+		}
+		.image2 {
+			position: absolute;
+		    width: 48%;
+		    left: 88%;
+		    z-index: -1;
+		}
+		.image3 {
+		    position: absolute;
+		    width: 48%;
+		    left: -29%;
+		    transform: rotate(13deg);
+		    z-index: -1;
+		}
+		@media (max-width: 767px){ 
+            padding-top: 45px;
+        }
 		.year-heading-wrapper {	
 			display: table;
 			table-layout: fixed;
@@ -86,9 +107,14 @@
 
 				.child-image {
 					height: 250px;
-				    border-radius: 45px;
+				    border-radius: 30px;
 				    margin: 25px;
 				    background-size: cover;
+
+				    @media (max-width: 767px){
+				    	border-radius: 15px;
+			            height: 165px;
+			        }
 				}
 		    }
 		}
