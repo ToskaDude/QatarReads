@@ -7,6 +7,7 @@ $mobile : 767px;
 
 $color-a7: #A7A7A7;
 $color-70: #707070;
+$color-f3: #F3F3F3;
 $color-theme-blue: #24B9D1;
 $color-blue-disabled: #69D9EB;
 $color-breadcrumb: #EE317F;
@@ -33,4 +34,31 @@ $color-breadcrumb: #EE317F;
     padding: 60px 0px;
     color: $color-a7;
     text-align: center;
+}
+
+@mixin blue-button {
+    background-color: $color-theme-blue;
+    color: #FFF;
+    font-family: din-regular;
+    font-size: 24px;
+    line-height: 60px;
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    margin-top: 40px;
+}
+
+@mixin subscription {
+    background-color: $color-theme-blue;
+    padding: 90px 0;
+    p {
+        text-align: center;
+        font-family: din-regular;
+        font-size: 24px;
+        color: #FFF;
+        &.title {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+    }
 }

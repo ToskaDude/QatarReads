@@ -136,17 +136,6 @@
         }
     }
     .subscribe-section {
-        background-color: $color-theme-blue;
-        padding: 90px 0;
-        p {
-            text-align: center;
-            font-family: din-regular;
-            font-size: 24px;
-            color: #FFF;
-            &.title {
-                font-size: 40px;
-                margin-bottom: 20px;
-            }
-        }
+        @include subscription;
     }
 }
