@@ -118,10 +118,16 @@ body {
         padding-top: 48px;
         padding-bottom: 48px;
     }   
-     @media (max-width: 786px){  
-        font-size: 0.99em;
-    }
-
+    @media (max-width: 1340px){ 
+        font-size: 0.8em;
+    }  
+    @media (max-width: 1068px){  
+    } 
+    @media (max-width: 910px){ 
+    }  
+    @media (max-width: 823px){  
+        width: 99%;
+    } 
 } 
 .navbar-nav {   
     
@@ -138,7 +144,7 @@ body {
             background-color: #24B9D1;
         }
     } 
-    @media (max-width: 768px){    
+    @media (max-width: 767px){    
         margin: 10.5px -15px;
     }   
 }
@@ -262,4 +268,7 @@ body {
 .copyright-section {
     display: table;
     width: 100%;
+}
+.main-wrapper {
+    margin-top: 115px;
 }
