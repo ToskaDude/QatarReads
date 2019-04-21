@@ -1,0 +1,60 @@
+.popup {
+    background:rgba(0,0,0,.75);
+    cursor:pointer;
+    display:none;
+    height:100%;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:100%;
+    z-index:10000;
+    &.popup-open {
+        display: block;
+    }
+    .popup-wrapper {
+        border-radius: 10px;
+        display: inline-block;
+        height: auto;
+        max-width: 551px;
+        min-height: 100px;
+        vertical-align: middle;
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        img {
+            width: 100%;
+        }
+    }
+    .popup-close {
+        cursor: pointer;
+        display: inline-block;
+        font-family: arial;
+        font-weight: bold;
+        position: absolute;
+        top: -40px;
+        right: 0px;
+        font-size: 25px;
+        line-height: 30px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        background: url('../Assets/Images/icons/popup-close.svg') no-repeat center;
+    }
+    .popup-paginate {
+        .prev, .next {
+            width: 30px;
+            height: 30px;
+            float: left;
+        }
+        .prev {
+            background: url('../Assets/Images/icons/popup-left.svg') no-repeat center;
+            margin-right: 10px;
+        }
+        .next {
+            background: url('../Assets/Images/icons/popup-right.svg') no-repeat center;
+        }
+    }
+}

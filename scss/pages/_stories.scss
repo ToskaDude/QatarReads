@@ -4,6 +4,7 @@
 
 .story-page {
     .stories-content {
+        padding: 0px;
         .breadcrumb {
             background-color: $color-breadcrumb;
             height: 70px;
@@ -40,6 +41,7 @@
                     font-family: din-regular;
                     font-size: 30px;
                     line-height: 60px;
+                    padding-left: 20px;
                 }
                 li {
                     text-align: center;
@@ -47,6 +49,7 @@
                     font-family: din-regular;
                     font-size: 30px;
                     line-height: 60px;
+                    padding-left: 20px;
                     &.active {
                         color: #FFF;
                     }
@@ -56,6 +59,7 @@
                     .title {
                         color: #76777B;
                         background: transparent;
+                        padding-left: 0px;
                     }
                     ul {
                         background-color: #3765B0;
@@ -66,6 +70,7 @@
                         position: relative;
                         height: 45px;
                         overflow: scroll;
+                        padding-left: 0px;
                         &:after {
                             content: '';
                             position: absolute;
