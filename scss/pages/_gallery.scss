@@ -1,0 +1,56 @@
+@import "../elements/header";
+@import "../generics/variables";
+
+.gallery-page {
+    .main-wrapper {
+        margin-top: 75px;
+    }
+    .gallery-content {
+        padding: 80px 0px;
+        .gallery-title {
+            h3, h4 {
+                text-align: center;
+                font-family: din-regular;
+            }
+            h3 {
+                font-size: 36px;
+                line-height: 45px;
+                color: #76777B;
+            }
+            h4 {
+                color: $color-a7;
+                font-size: 26px;
+                line-height: 30px;
+                text-decoration: underline;
+                // border-bottom: 1px solid $color-70;
+            }
+        }
+        .gallery-types {
+            background: $color-theme-blue;
+            border-radius: 30px;
+            max-width: 400px;
+            height: 60px;
+            padding: 10px;
+            margin: auto;
+            li {
+                display: block;
+                list-style: none;
+                width: 33%;
+                float: left;
+                font-family: din-regular;
+                font-size: 20px;
+                line-height: 40px;      
+                text-align: center;
+                text-transform: uppercase;
+                color: $color-blue-disabled;
+                border-right: 1px solid #FFF; 
+                &.active {
+                    color: #FFF;
+                }
+                &:last-child {
+                    border-right: 0px;
+                }
+            }
+        }
+    }
+}

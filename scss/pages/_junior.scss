@@ -1,4 +1,4 @@
-.programs-page {
+.junior-page {
 	.card-section {
 		background: #f3f3f3;
 		padding: 70px 30px;
@@ -24,8 +24,8 @@
 		}
 		.shape-right {
 			position: absolute;
-    		right: 0;
-    		top: 30px;
+    		right: -45px;
+    		top: -110px;
 
     		img {
     			max-width: 100%;
@@ -35,6 +35,7 @@
     		}
     		@media(max-width: 640px) {
     			max-width: 40%;
+                top: -40px;
     		}
 		}
 		@media(min-width: 901px) {
