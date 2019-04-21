@@ -1,0 +1,171 @@
+@import "../generics/variables";
+.hrp-page {
+    .breadcrumb {
+        @include breadcrumb;
+    }
+
+    .inner-page-desc {
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            @media(max-width: 900px) {
+                display: block;
+                text-align: center;
+            }
+            img {
+                margin-right: 30px;
+
+                @media(max-width: 900px) {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+	.list-hospitals {
+		background: #f3f3f3;
+		padding: 70px 30px;
+		position: relative;
+        overflow: hidden;
+        @media(max-width: 900px) {
+            padding: 40px 10px;
+        }
+        .shape-left {
+         position: absolute;
+        left: -58px;
+        bottom: -82px;
+        height: 256px;
+        width: 246px;
+         img {
+             max-width: 100%;
+         }
+         @media(max-width: 1366px) {
+             max-width: 300px;
+            height: 87px;
+            z-index: 0;
+            transform: rotate(-17deg);
+            bottom: 0;
+         }
+         @media(max-width: 640px) {
+             max-width: 40%;
+              bottom: -10px;
+         }
+     }
+     .shape-right {
+         position: absolute;
+        right: -21px;
+        top: -41px;
+        height: 320px;
+
+         img {
+             max-width: 100%;
+             max-height: 100%;
+         }
+         @media(max-width: 1366px) {
+             max-width: 300px;
+            height: 150px;
+         }
+         @media(max-width: 640px) {
+             max-width: 40%;
+             right: -42px;
+         }
+     }
+     @media(min-width: 901px) {
+         display: flex;
+         justify-content: center;
+         padding: 70px 0;
+     }
+
+     .section-desc {
+        color: $color-a7;
+        font-size: 22px;
+        line-height: 31px;
+        text-align: center;
+        max-width: 900px;
+        margin: 0 auto;
+        width: 90%;
+        @media(max-width: 1024px) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }   
+
+    .list {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 80px;
+        @media(max-width: 900px) {
+            max-width: calc(100% - 100px);
+            margin: 20px auto 0;
+        }
+        .slides{
+            @media(min-width: 901px) {
+                text-align: center;
+                margin-bottom: 80px;
+                display: flex;
+                align-items: flex-end;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                p {
+                    width: 100%;
+                    font-family: 'Arial';
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: $color-a7;
+                    line-height: 28px;
+                    line-height: 23px;
+                    @media(max-width: 1366px) {
+                        font-size: 18px;
+                    }
+                }
+
+                img {
+                    max-width: 90%;
+                    margin-bottom: 20px;
+                }
+            }
+            @media(max-width: 900px) {
+                img {
+                    max-width: 90%;
+                    margin: 0 auto;
+                    max-height: 100%;
+                }
+                p {
+                     display: none;
+                }
+            }
+        }
+    }
+
+}
+    .slick-prev {
+            background: url(../assets/Images/prev-arrow.svg) no-repeat;
+            background-size: contain;
+            background-size: auto;
+            height: 50px;
+            width: 33px;
+            background-position: center;
+            left: -60px;
+            &:before {
+                display: none;
+            }
+    }
+    .slick-next {
+        background: url(../assets/Images/next-arrow.svg) no-repeat;
+        background-size: auto;
+        height: 50px;
+        width: 33px;
+        background-position: center;
+        right: -60px;
+        &:before {
+            display: none;
+        }
+    }
+    .slick-initialized .slick-slide {
+        display: flex;
+        align-items: center;
+        height: 180px;
+    }
+}
