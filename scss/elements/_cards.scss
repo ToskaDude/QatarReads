@@ -1,0 +1,65 @@
+.common-card {
+	width: 40%;
+	max-width: 600px;
+	margin: 3%;
+	background: white;
+	border-radius: 42px;
+	position: relative;
+	padding-bottom: 80px;
+	@media(max-width: 900px) {
+		width: 90%;
+		margin: 20px auto;
+		padding-bottom: 30px;
+	}
+
+	img {
+		max-width: 100%;
+	}
+	p {
+		font-size: 18px;
+		font-family: din-regular;
+		line-height: 22px;
+		color: #a7a7a7;
+	}
+
+	.card-title {
+		color: #76777B;
+		font-size: 30px;
+		margin-bottom: 14px;
+	}
+	.card-content {
+		padding: 20px;
+	}
+
+	.blue-btn {
+		@media(min-width: 901px) {
+			position: absolute;
+			bottom: 20px;
+			left: 20px;
+			margin-top: 0;
+		}
+		margin-top: 20px;
+
+	}
+}
+
+@media(max-width: 900px) {
+	.common-card .card-title {
+		font-size: 21px;
+	}
+	 .common-card p {
+	    font-size: 18px;
+	    font-family: din-regular;
+	    line-height: 22px;
+	}
+	.common-card .card-content {
+	    padding: 20px;
+	    text-align: center;
+	}
+}
+
+@media(max-width: 640px) {
+	.common-card .card-title {
+		font-size: 21px;
+	}
+}
