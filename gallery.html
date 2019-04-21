@@ -25,7 +25,11 @@
             $(document).ready(function(){
                 $('.grid').masonry({
                     columnWidth: 200,
+                    fitWidth: true,
                     itemSelector: '.grid-item'
+                });
+                $('.popup-close, .grid-item').click(() => {
+                    $('.popup').toggleClass('popup-open');
                 });
             });
         </script>
@@ -67,56 +71,92 @@
                 <!-- /.container-fluid -->
             </nav>
             <main class="main-wrapper mt-70">
-                <div>
-                    <section class="inner-page-header" style="background:url('Assets/Images/gallery/banner.png')">
-                        <div class="overlay"></div>
-                        <h1>Gallery</h1>
-                    </section>
-                    <section class="container-fluid gallery-content">
-                        <div class="col-md-8 col-md-offset-2 gallery-title">
-                            <h4 class="mb-10">Lorem ipsum</h4>
-                            <h3>Lorem ipsum dolor sit amet,</h3>
-                            <ul class="gallery-types">
-                                <li class="active"> All </li>
-                                <li> Photos </li>
-                                <li> Videos </li>
-                            </ul>
-                        </div>
-                        <div class="gallery-grid col-md-8 col-md-offset-2 mt-70">
-                            <div class="grid">
-                                <img src="Assets/Images/gallery/5cb571d753a04.png" class="grid-item grid-item--height2" />
-                                <img src="Assets/Images/gallery/5cb57302247d0.png" class="grid-item" />
-                                <img src="Assets/Images/gallery/5cb573497a419.png" class="grid-item" />
-                                <img src="Assets/Images/gallery/5cb573ad0d591.png" class="grid-item" />
-                                <div class="grid-item grid-video-item">
-                                    <img src="Assets/Images/gallery/5cb5a22686f47.png" class="" />
-                                    <div class="label">
-                                        <span class="title">
-                                            Lorem ipsum dolor sit amet, Consectetur
-                                        </span>
-                                        <p>
-                                            Qatar Reads aims to knit together all the different parts of Qatar’s reading community
-                                        </p>
-                                    </div>
+                <section class="inner-page-header" style="background:url('Assets/Images/gallery/banner.png')">
+                    <div class="overlay"></div>
+                    <h1>Gallery</h1>
+                </section>
+                <section class="container-fluid gallery-content">
+                    <div class="col-md-8 col-md-offset-2 gallery-title">
+                        <h4 class="mb-10">Lorem ipsum</h4>
+                        <h3>Lorem ipsum dolor sit amet,</h3>
+                        <ul class="gallery-types">
+                            <li class="active"> All </li>
+                            <li> Photos </li>
+                            <li> Videos </li>
+                        </ul>
+                    </div>
+                    <div class="gallery-grid col-md-8 col-md-offset-2 mt-70">
+                        <div class="grid">
+                            <div class="grid-item">
+                                <img src="Assets/Images/gallery/5cb571d753a04.png" />
+                                <div class="label">
+                                    <span class="title">
+                                        Lorem ipsum dolor sit amet, Consectetur
+                                    </span>
+                                    <p>
+                                        Qatar Reads aims to knit together all the different parts of Qatar’s reading community
+                                    </p>
                                 </div>
-                                <img src="Assets/Images/gallery/video.png" class="grid-item" />
                             </div>
-                            <div class="paginate">
-                                <div class="prev"></div>
-                                <div class="next"></div>
+                            <div class="grid-item">
+                                <img src="Assets/Images/gallery/5cb57302247d0.png" />
+                            </div>
+                            <div class="grid-item">
+                                <img src="Assets/Images/gallery/5cb573497a419.png" />
+                            </div>
+                            <div class="grid-item">
+                                <img src="Assets/Images/gallery/5cb573ad0d591.png" />
+                            </div>
+                            <div class="grid-item grid-video-item">
+                                <img src="Assets/Images/gallery/5cb5a22686f47.png" />
+                                <div class="label">
+                                    <span class="title">
+                                        Lorem ipsum dolor sit amet, Consectetur
+                                    </span>
+                                    <p>
+                                        Qatar Reads aims to knit together all the different parts of Qatar’s reading community
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img src="Assets/Images/gallery/video.png" />
+                                <div class="label">
+                                    <span class="title">
+                                        Lorem ipsum dolor sit amet, Consectetur
+                                    </span>
+                                    <p>
+                                        Qatar Reads aims to knit together all the different parts of Qatar’s reading community
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </section>
-                    <section class="subscribe-section">
-                        <div class="col-md-8 col-md-offset-2">
-                            <p class="title">
-                                Subscribe to Family Reading Program
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit is faucibus purus, ac posuere leo egestas id. Nullam molestie neque ab scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing 
-                            </p>
+                        <div class="paginate">
+                            <div class="prev"></div>
+                            <div class="next"></div>
                         </div>
-                    </section>
+                    </div>
+                </section>
+                <section class="subscribe-section">
+                    <div class="col-md-8 col-md-offset-2">
+                        <p class="title">
+                            Subscribe to Family Reading Program
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit is faucibus purus, ac posuere leo egestas id. Nullam molestie neque ab scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        </p>
+                    </div>
+                </section>
+                <div class="popup">
+                    <div class="popup-wrapper">
+                        <span class="popup-close"></span>
+                        <div class="popup-container">
+                            <img src="Assets/Images/gallery/5cb57302247d0.png" />
+                        </div>
+                        <div class="popup-paginate">
+                            <div class="prev"></div>
+                            <div class="next"></div>
+                        </div>
+                    </div>
                 </div>
             </main>
             <footer>
