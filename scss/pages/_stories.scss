@@ -12,7 +12,7 @@
             @include page-description;
         }
         .stories-list {
-            background-color: #F3F3F3;
+            background-color: $color-f3;
             padding: 0px;
             .stories-left {
                 background-color: #3765B0;
@@ -39,7 +39,7 @@
                     }
                 }
                 @media(max-width: 991px) {
-                    background-color: #F3F3F3;
+                    background-color: $color-f3;
                     .title {
                         color: #76777B;
                         background: transparent;
@@ -84,7 +84,7 @@
                 }
             }
             .stories {
-                background-color: #F3F3F3;
+                background-color: $color-f3;
                 padding: 40px 0px;
                 .book {
                     min-width: 200px;
@@ -137,18 +137,7 @@
         }
     }
     .subscribe-section {
-        background-color: $color-theme-blue;
-        padding: 90px 0;
-        p {
-            text-align: center;
-            font-family: din-regular;
-            font-size: 24px;
-            color: #FFF;
-            &.title {
-                font-size: 40px;
-                margin-bottom: 20px;
-            }
-        }
+        @include subscription;
     }
     .paginate {
         width: 150px;
