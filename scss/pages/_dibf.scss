@@ -1,0 +1,21 @@
+.dibf-page{
+	.breadcrumb-section {
+		height: 50px;
+		background-color: #EE317F;
+	    display: table;
+    	width: 100%;
+
+		.breadcrumb-div {
+		    width: 250px;
+		    text-align: right;
+		    color: white;
+		    font-size: 0.8em;
+		    display: table-cell;
+		    height: 100%;
+		    vertical-align: middle;
+		    padding-right: 150px;
+		    font-family: din-medium;
+		}
+	}
+
+}
