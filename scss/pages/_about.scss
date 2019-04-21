@@ -13,8 +13,7 @@
     .main-wrapper{
         margin-top: 75px;
     }
-    .hero-image-section{
-        background-image: url('../Assets/Images/aboutus-hero.png');
+    .hero-image-section{        
         background-size: cover;
         background-repeat: no-repeat;
         min-height: 314px;
@@ -50,12 +49,23 @@
         }  
         .reading-point {
             color: white;
-            font-family: DINMedium;
+            font-family: din-medium;
             text-align: left;
             margin: 21px 0 21px 20px;
             font-size: 16px;
             position: relative;
             top: 5px; 
+            display: table;
+
+            img {
+                display: table-cell;
+            }
+
+            .text{
+                display: table-cell;
+                vertical-align: middle;
+                padding-left: 15px;
+            }
         }
         .vital-reading-2{
             background-image: url('../Assets/Images/vital-reading-points-2.png');
