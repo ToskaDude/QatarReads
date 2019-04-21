@@ -1,0 +1,49 @@
+.community-page {
+	.card-section {
+		background: #f3f3f3;
+		padding: 70px 30px;
+		position: relative;
+        overflow: hidden;
+        flex-wrap: wrap;
+        @media(max-width: 640px) {
+            padding: 70px 10px;
+        }
+		.shape-left {
+			position: absolute;
+    		left: -100px;
+    		bottom: 30px;
+
+    		img {
+    			max-width: 100%;
+    		}
+    		@media(max-width: 1366px) {
+    			max-width: 300px;
+    		}
+    		@media(max-width: 640px) {
+    			max-width: 40%;
+    		}
+		}
+		.shape-right {
+			position: absolute;
+    		right: -103px;
+    		top: 0px;
+
+    		img {
+    			max-width: 100%;
+    		}
+    		@media(max-width: 1366px) {
+    			max-width: 300px;
+    		}
+    		@media(max-width: 640px) {
+    			max-width: 40%;
+                right: -42px;
+    		}
+		}
+		@media(min-width: 901px) {
+			display: flex;
+			justify-content: center;
+			padding: 70px 0;
+		}
+		
+	}
+}
