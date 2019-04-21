@@ -1,6 +1,7 @@
 @import "../elements/header";
 @import "../generics/variables";
 @import "../elements/paginate";
+@import "../elements/popup";
 
 .gallery-page {
     .gallery-content {
@@ -84,20 +85,15 @@
                     min-width: 20%;
                     border-radius: 50px;
                     margin: 0px 10px 10px 0px;
-                    &.grid-video-item {
-                        &:after{
-                            background: url('../Assets/Images/icons/video-play.svg') no-repeat center;
-                            content: '';
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                        }
-                        img {
-                            width: 100%;
-                        }
+                    img {
+                        width: 100%;
+                    }
+                    .label {
+                        display: none;
+                    }
+                    &:hover {
                         .label {
+                            display: block;
                             background-color: #F15832;
                             color: #FFF;
                             font-family: din-regular;
@@ -122,6 +118,17 @@
                                 hyphens: auto;
                                 max-width: 100%;
                             }
+                        }
+                    }
+                    &.grid-video-item {
+                        &:after{
+                            background: url('../Assets/Images/icons/video-play.svg') no-repeat center;
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
                         }
                     }
                 }

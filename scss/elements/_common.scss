@@ -24,6 +24,36 @@
     cursor: pointer;
 }
 
+.section-heading {
+    color: #76777B;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-family: din-medium;
+    font-size: 32px;
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 60px;
+      height: 3px;
+      background: #24B9D1;
+        bottom: 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+    @media(max-width: 1366px) {
+      font-size: 28px;
+    }
+    @media(max-width: 640px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
 .body-wrapper {
   &.container-fluid {
     padding-left: 0;
