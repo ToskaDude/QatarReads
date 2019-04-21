@@ -1,0 +1,77 @@
+@import "../generics/variables";
+.family-page {
+    .breadcrumb {
+        @include breadcrumb;
+    }
+	.card-section {
+		background: #f3f3f3;
+		padding: 70px 30px;
+		position: relative;
+        overflow: hidden;
+        @media(max-width: 640px) {
+            padding: 70px 10px;
+        }
+		.shape-left {
+			position: absolute;
+    		left: 0;
+    		bottom: 30px;
+
+    		img {
+    			max-width: 100%;
+    		}
+    		@media(max-width: 1366px) {
+    			max-width: 300px;
+    		}
+    		@media(max-width: 640px) {
+    			max-width: 40%;
+    		}
+		}
+		.shape-right {
+			position: absolute;
+    		right: -45px;
+    		top: -110px;
+
+    		img {
+    			max-width: 100%;
+    		}
+    		@media(max-width: 1366px) {
+    			max-width: 300px;
+    		}
+    		@media(max-width: 640px) {
+    			max-width: 40%;
+                top: -40px;
+    		}
+		}
+		@media(min-width: 901px) {
+			display: flex;
+			justify-content: center;
+			padding: 70px 0;
+		}
+		
+	}
+
+    .common-card {
+        &.expanded {
+            @media(min-width: 901px) {
+                display: flex;
+                width: 100%;
+                max-width: 800px;
+                padding-bottom: 0;
+
+                img {
+                    max-width: 250px;
+                }
+
+                .blue-btn {
+                    position: relative;
+                    bottom: auto;
+                    left: auto;
+                    margin-top: 17px;
+                }
+            }
+             img {
+                    width: 100%;
+                }
+        }
+    }
+}
