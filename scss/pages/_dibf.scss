@@ -7,6 +7,11 @@
 			width: 100%;
 		}
 	}
+	.mobile-hide {
+		@media (max-width: 767px){ 
+            display: none;
+        }	
+	}
 	.breadcrumb-section {
 		height: 50px;
 		background-color: #EE317F;
@@ -77,6 +82,13 @@
 				    font-size: 1.15em;
 				    margin-top: 20px;
 			        margin-bottom: 10px;
+				}
+
+				.child-image {
+					height: 250px;
+				    border-radius: 45px;
+				    margin: 25px;
+				    background-size: cover;
 				}
 		    }
 		}
