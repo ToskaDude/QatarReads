@@ -1,6 +1,41 @@
-
 .navbar {
-    min-height: 75px;                
+    min-height: 115px;    
+    
+    .header-container {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .login-li {
+        padding: 8px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .login-button {
+        display: table;
+        border: 1px solid #24B9D1;
+        margin-top: 27px;
+        padding: 8px;
+        font-size: 1.05em;
+        color: #24B9D1;
+        border-radius: 21px;        
+        font-family: din-regular;
+
+        img {
+            display: table-cell;
+        }
+
+        .login-text {
+            display: table-cell;
+            vertical-align: middle;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+    }
+
+    .search-icon {
+        margin-top: 43px;
+    }
 }
 .navbar-collapse{
     overflow-x: hidden;
@@ -10,7 +45,7 @@
 }
 
 body {
-    font-family: DINRegular;
+    font-family: din-regular;
 }
 .violet-red-section{
     background-color: #EE317F; 
@@ -27,13 +62,31 @@ body {
     color: white;
     font-size: 22px;
 }   
-.navbar-nav>li>a {        
+.navbar-nav>li>a {   
+    font-weight: bold;
+    font-family: din-regular;
+    font-size: 1.05em;     
+
     @media (min-width: 768px){    
-        padding-top: 27px;
-        padding-bottom: 27px;
+        padding-top: 48px;
+        padding-bottom: 48px;
     }                
 } 
-.navbar-nav {       
+.navbar-nav {   
+    
+    li>a.arabic-button {
+        display: inline-block;
+        background-color: #24B9D1;
+        color: white;
+        font-size: 0.8em;
+        padding: 8px;
+        margin-top: 38px;
+        border-radius: 8px;
+        
+        &:hover{
+            background-color: #24B9D1;
+        }
+    } 
     @media (max-width: 768px){    
         margin: 10.5px -15px;
     }   
@@ -51,7 +104,7 @@ body {
         vertical-align: middle;
 
         .section-heading{
-            font-family: DINMedium; 
+            font-family: din-medium; 
             font-size: 24px;
             padding-bottom: 10px
         }
@@ -66,7 +119,7 @@ body {
             width: 150px;
             border-radius: 25px;
             margin: 25px auto 0;;
-            font-family: DINMedium;
+            font-family: din-medium;
             padding: 10px;
         }
 
@@ -75,7 +128,7 @@ body {
             width: 150px;
             border-radius: 25px;
             margin: 25px auto 0;;
-            font-family: DINMedium;
+            font-family: din-medium;
             padding: 10px;
         }
     }
@@ -135,7 +188,7 @@ body {
         }
 
         .link-heading {
-            font-family: DINMedium;
+            font-family: din-medium;
             color: #24B9D1;
             font-size: 20px;                
         }
@@ -144,7 +197,7 @@ body {
             margin-top: 3px;
 
             a{
-                font-family: DINRegular;
+                font-family: din-regular;
                 color: #76777B;              
             }
 
