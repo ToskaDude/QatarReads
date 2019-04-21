@@ -23,8 +23,23 @@
 
 	.slick-dotted.slick-slider {
 		margin-bottom: 0;
-	}
+	}	
 
+	.home-slider-section {
+		position:relative;
+
+		.scroll-to-about-us {
+			position: absolute;
+    		right: 89px;
+    		bottom: 55px;
+    		cursor: pointer;
+
+    		img {
+    			width: 30px;
+    		}
+		}
+	}
+	
 	.home-slider {
 		.slide {
 			height: 100vh;
@@ -131,9 +146,51 @@
 
 	.cards-section {
 		background: #F3F3F3;
+		position: relative;
+		overflow: hidden;
+		padding: 60px 0;
+		
+		.shape-top {
+			position: absolute;
+		    right: 0;
+		    top: -110px;
+		    width: 600px;
 
+		    img {
+		    	max-width: 100%;
+		    }
+		    @media(max-width: 1366px) {
+		    	width: 509px;
+		    }
+		    @media(max-width: 768px) {
+		    	width: 260px;
+		    	top: -35px;
+		    }
+		}	
+
+		.shape-bottom {
+			position: absolute;
+		    bottom: -43px;
+		    left: -6px;
+		    width: 400px;
+		    transform: rotate(13deg);
+
+		    @media(max-width: 1366px) {
+		    	left: -21px;
+    			width: 400px;
+		    }
+
+		    @media(max-width: 768px) {
+    			width: 250px;
+		    }
+
+		    img {
+		    	max-width: 100%;
+		    }
+		}
 		.flex-row {
 			justify-content: center;
+
 			@media(max-width: 900px) {
 				padding: 20px;
 				display: block;
