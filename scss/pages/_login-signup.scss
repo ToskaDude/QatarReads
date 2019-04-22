@@ -57,6 +57,7 @@
             &[type=submit] {
                 @include blue-button;
                 height: 45px;
+                line-height: 45px;
                 width: 100%;
                 max-width: 100%;
                 margin: 0 auto;
