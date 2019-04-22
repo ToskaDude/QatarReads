@@ -1,14 +1,20 @@
 @font-face {
   font-family: din-light;
-  src: url("../assets/fonts/DINLight.ttf");
+  src: url("../Assets/Fonts/DIN/DIN-Light.ttf"),
+       url('../Assets/Fonts/DIN/din-light-webfont.woff2') format('woff2'),
+       url('../Assets/Fonts/DIN/din-light-webfont.woff') format('woff');
 }
 @font-face {
   font-family: din-regular;
-  src: url("../assets/fonts/DINRegular.ttf");
+  src: url("../Assets/Fonts/DIN/DIN-Regular.ttf"),
+       url('../Assets/Fonts/DIN/din-regular-webfont.woff2') format('woff2'),
+       url('../Assets/Fonts/DIN/din-regular-webfont.woff') format('woff');
 }
 @font-face {
   font-family: din-medium;
-  src: url("../assets/fonts/DINMedium.ttf");
+  src: url("../Assets/Fonts/DIN/DIN-Medium.ttf"),
+       url('../Assets/Fonts/DIN/din-medium-webfont.woff2') format('woff2'),
+       url('../Assets/Fonts/DIN/din-medium-webfont.woff') format('woff');
 }
 .main-wrapper {
   width: 100%;

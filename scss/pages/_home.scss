@@ -43,11 +43,15 @@
 	
 	.home-slider {
 		.slide {
-			height: 100vh;
+			height: calc(100vh - 115px);
 			min-height: 400px;
 			background-size: cover !important;
 			background-position: center !important;
 			position: relative;
+
+			@media(max-width: 767px) {
+				height: calc(100vh - 80px);
+			}
 			
 			.content {
 				position: absolute;
