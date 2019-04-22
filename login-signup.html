@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Volunteer</title>
+        <title>Login</title>
         <meta name="description" content="">
         <meta name="author" content="">
         <!-- Latest compiled and minified CSS -->
@@ -21,11 +21,15 @@
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
-               
+               $('.toggle-form').click(()=> {
+                    $('.login').toggleClass('hide');
+                    $('.signup').toggleClass('hide');
+                    $('.tabs div').toggleClass('active');
+               });
             });
         </script>
     </head>
-    <body class="volunteer-page">
+    <body class="login-signup-page">
         <div class="body-wrapper">
             <header>
                 <nav class="navbar navbar-default navbar-fixed-top">
@@ -76,73 +80,70 @@
                     </div>                    
                 </nav>
             </header>
-            <div class="content">
-                <section class="inner-page-header mt-70" style="background:url('Assets/Images/volunteer/banner.png')">
-                    <div class="overlay"></div>
-                    <h1>Volunteer</h1>
-                </section>
-                <section class="container-fluid volunteer-content">
-                    <div class="breadcrumb"> 
-                        <p> Community > Volunteer </p>
-                    </div>
-                    <div class="col-md-8 col-sm-10 col-xs-10 col-md-offset-2 col-sm-offset-1 col-xs-offset-1 description">
-                        Qatar Reads hosts a variety of outreach initiatives. For a chance to volunteer at any of our events, please fill out the form below.
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12 mid-section">
-                        <div class="col-md-8 col-sm-10 col-xs-10 col-md-offset-2 col-sm-offset-1 col-xs-offset-1">
-                            <p> We need you, Help us around </p>
-                            <img src="Assets/Images/volunteer/mid-section.png"/>
+            <div class="main-wrapper">
+                <section class="container-fluid form-content">
+                    <div class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">
+                        <div class="tabs">
+                            <div class="toggle-form"> Login </div>
+                            <div class="active toggle-form"> Sign Up</div>
                         </div>
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12 volunteer-type-section">
-                        <div class="col-md-10 col-sm-10 col-xs-10 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-                            <div class="col-md-3 col-sm-6 col-xs-12 volunteer">
-                                <div class="volunteer-img" style="background:url('Assets/Images/volunteer/v1.png')"></div>
-                                <p class="volunteer-name">Lorem ipsum</p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit is faucibus purus, ac posuere leo egestas id. Nullam molestie neque ab scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                </p>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12 volunteer">
-                                <div class="volunteer-img" style="background:url('Assets/Images/volunteer/v2.png')"></div>
-                                <p class="volunteer-name">Lorem ipsum</p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit is faucibus purus, ac posuere leo egestas id. Nullam molestie neque ab scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                </p>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12 volunteer">
-                                <div class="volunteer-img" style="background:url('Assets/Images/volunteer/v3.png')"></div>
-                                <p class="volunteer-name">Lorem ipsum</p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit is faucibus purus, ac posuere leo egestas id. Nullam molestie neque ab scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                </p>
-                            </div>
-                            <div class="col-md-3 col-sm-6 col-xs-12 volunteer">
-                                <div class="volunteer-img" style="background:url('Assets/Images/volunteer/v4.png')"></div>
-                                <p class="volunteer-name">Lorem ipsum</p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit is faucibus purus, ac posuere leo egestas id. Nullam molestie neque ab scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                </p>
-                            </div>
-                        </div>
-                        <button>BE A VOLUNTEER</button>
-                    </div>
-                    <div class="join-us col-md-12 col-sm-12 col-xs-12">
-                        <form class="col-md-8 col-sm-10 col-xs-10 col-md-offset-2 col-sm-offset-1 col-xs-offset-1">
+                        <form class="login hide">
                             <div class="form-group">
+                                <input type="text" class="form-control" placeholder="User Name" class="form-control"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Password" class="form-control"/>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-6 col-xs-12 col-md-offset-3 col-sm-offset-3">
+                                <input type="submit" value="Login"/>
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12 splitter">or</div>
+                            <div class="col-md-12 col-sm-12 col-xs-12 login-with">
+                                <button class="col-md-5 col-sm-5 col-xs-12 fb-login">Login with Facebook</button>
+                                <button class="col-md-5 col-sm-5 col-xs-12 google-login">Login with Google</button>
+                            </div>
+                            <div class="forgot">
+                                <div class="col-md-6 col-sm-6 col-xs-12"> Forgot your password? </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12"> Don't have an account? <span class="toggle-form"> Sign up </span></div>
+                            </div>
+                        </form>
+                        <form class="signup">
+                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
                                 <input type="text" class="form-control" placeholder="Name" class="form-control"/>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" class="form-control" placeholder="Age" class="form-control"/>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                <select class="form-control">
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                                <span class="caret"></span>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                <select class="form-control">
+                                    <option>Nationality</option>
+                                </select>
+                                <span class="caret"></span>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" class="form-control" placeholder="Institution" class="form-control"/>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
                                 <input type="email" class="form-control" placeholder="Email" class="form-control"/>
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Subject" class="form-control"/>
+                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" class="form-control" placeholder="Occupation" class="form-control"/>
                             </div>
-                            <div class="form-group">
-                                <textarea class="form-control" placeholder="Message"></textarea>
+                            <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" class="form-control" placeholder="Contact Number" class="form-control"/>
                             </div>
-                            <div class="form-group">
-                                <input type="submit" value="Join Now"/>
+                            <div class="form-group col-md-6 col-sm-6 col-xs-12 col-md-offset-3 col-sm-offset-3">
+                                <input type="submit" value="Sign Up"/>
+                            </div>
+                            <div class="forgot">
+                                <div class="col-md-12 col-sm-12 col-xs-12"> Already have an account? <span class="toggle-form"> Sign In </span></div>
                             </div>
                         </form>
                     </div>
@@ -150,19 +151,6 @@
             </div>
             <footer>
                 <div class="footer"> 
-                    <div class="subscribe-section">
-                        <div class="subscribe-section-content-wrapper">
-                            <div class="section-heading">
-                                Subscribe to Family Reading Program
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit is faucibus purus, ac posuere leo egestas id. Nullam molestie neque ab scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing 
-                            </p>
-                            <div class="subscribe-button">
-                                SUBSCRIBE                            
-                            </div> 
-                        </div>       
-                    </div> 
                     <div class="quick-links-section">
                             <div class="quick-links-section-content-wrapper">
                                 <div class="container-fluid">

@@ -1,0 +1,125 @@
+@import "../generics/variables";
+
+.login-signup-page {
+    background-color: $color-f3;
+    .form-content {
+        border-bottom: 1px solid $color-70;
+    }
+    .tabs {
+        padding-top: 60px;
+        width: 420px;
+        max-width: 100%;
+        margin: auto;
+        overflow: auto;
+        div {
+            float: left;
+            font-family: din-regular;
+            font-size: 55px;
+            line-height: 65px;   
+            color: #CDCDCD;
+            border-right: 1PX solid $color-70;
+            padding: 0 20px;
+            cursor: pointer;
+            &.active {
+                color: $color-theme-blue;
+            } 
+            &:last-child {
+                border-right: 0px;
+            }
+            @media(max-width: 768px) {
+                font-size: 30px;
+                line-height: 35px;   
+                width: 50%;
+                text-align: center;
+            }
+        }
+    }
+    form {
+        padding-top: 60px;
+        &.hide {
+            display: none;
+        }
+        .form-group {
+            position: relative;
+            .caret {
+                position: absolute;
+                top: 20px;
+                right: 30px;            
+            }
+        }
+        input, select {
+            font-family: Arial;
+            width: 100%;
+            height: 45px;
+            border-radius: 45px;
+            margin-bottom: 40px;
+            -webkit-appearance: none;
+            &[type=submit] {
+                @include blue-button;
+                height: 45px;
+                width: 100%;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+    .splitter {
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        position: relative;
+        color: #A7A7A7;
+        &::after, &::before {
+            content: '';
+            width: 100%;
+            right: 0px;
+            top: 50%;
+            width: 48%;
+            position: absolute;
+            height: 1px;
+            border-bottom: 1px solid #CDCDCD;
+        }
+        &::before {
+            left: 0px;
+            right: auto;
+        }
+    }
+    .login-with {
+        button {
+            height: 45px;
+            border-radius: 45px;
+            background: #3765B0;
+            color: #FFF;
+            line-height: 45px;
+            margin-bottom: 20px;
+            &.google-login {
+                float: right;
+                background: #EE317F;
+            }
+        }
+    }
+    .forgot {
+        font-family: din-regular;
+        font-size: 20px;
+        line-height: 25px;   
+        color: $color-a7;
+        padding: 20px 0px 60px;
+        clear: both;
+        div {
+            border-right: 1px solid $color-a7;
+            padding: 0 20px;
+            float: left;
+            text-align: center;
+            span {
+                display: inline-block;
+                cursor: pointer;
+            }
+            &:last-child {
+                border-right: 0px;
+            }
+            @media(max-width: 768px) {
+                border-right: 0px;
+            }
+        }
+    }
+}
